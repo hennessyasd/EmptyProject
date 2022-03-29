@@ -31,5 +31,5 @@ int main() {
 	delete[] array;
 
 	system("pause");
-	return 0; // all prog
+	return 0;
 }
