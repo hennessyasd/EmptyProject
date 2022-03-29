@@ -15,5 +15,5 @@ int main() {
 		cout << b;
 	}
 
-	return 0;
+	return 0; // all prog
 }
