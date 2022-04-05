@@ -1,10 +1,10 @@
 #include "Header.h"
 
-class Student {
+class Hero {
 private:
 	int age;
 	string name;
-
+	string clas;
 
 public:
 	string getName() {
@@ -23,8 +23,23 @@ public:
 		}
 	}
 
-	string getInfo() {
-		return name + ": age = " + to_string(age);
-			//+ " ; name = " + name;
+	void setClas(string n) {
+		clas = n;
 	}
+
+	string getInfo() {
+		return name + ": age = " + to_string(age) 
+			+ ": class = " + clas;
+	}
+
+
+
+	//Hero(){
+	//	name = "Tide"
+	//	age = "153";
+	//	clas = "berserk"
+	//}
+	//~Hero() {
+
+	//}
 };

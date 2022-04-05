@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	Student alex;
+	Hero alex;
 
 	alex.setName("Alex");
 	alex.setAge(15.5);
