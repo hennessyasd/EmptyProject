@@ -6,6 +6,10 @@ Hero::Hero(int age, string name, string clas) {
 	this-> clas = clas;
 }
 
+Hero::~Hero() {
+	
+};
+
 string Hero::getName() {
 	return name;
 }
