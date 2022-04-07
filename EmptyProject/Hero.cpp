@@ -21,7 +21,7 @@ int Hero::getAge() {
 	return age;
 }
 void Hero::setAge(int age) {
-	if (age >= 15 && age <= 70) {
+	if (age >= 30 && age <= 1000) {
 		this-> age = age;
 	}
 }

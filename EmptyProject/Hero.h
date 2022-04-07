@@ -7,7 +7,7 @@ private:
 	string clas;
 
 public:
-	Hero(int a, string n, string c);
+	Hero(int age, string name, string clas);
 	string getName();
 	void setName(string n);
 	int getAge();

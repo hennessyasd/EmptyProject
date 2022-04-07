@@ -1,23 +1,21 @@
 #include "Hero.h"
 
-class Group{
+class Group {
 private:
-
 	string name;
-	string size;
+	int size;
 	Hero* list;
 public:
 	Group();
 	Group(string name);
 	Group(string name, Hero* list, int size);
-	void add(Hero hero) {
+	~Group();
+	void add(Hero hero);
 		Hero get(int index);
-		/*int getSize() {
+		int getSize();
+		string getName();
+		void setName(string name);
 
-		}
-		string getInfo() {
-
-		}*/
-	}
+		string getInfo();
 };
 

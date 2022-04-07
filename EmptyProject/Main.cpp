@@ -4,13 +4,12 @@
 using namespace std;
 
 int main() {
-	Hero tide;
-	Hero tide;
+	//Hero hero;
 
-	tide.setName("Tide");
-	tide.setAge(15.5);
+	//hero.setName("Tide");
+	//hero.setAge(15.5);
 
-	cout << tide.getInfo() << endl;
+	//cout << tide.getInfo() << endl;
 
 	system("pause");
 	return 0;
