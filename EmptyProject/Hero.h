@@ -2,16 +2,17 @@
 
 class Hero {
 private:
-	int age;
+	int power;
 	string name;
 	string clas;
 
 public:
-	Hero(int age, string name, string clas);
+	Hero();
+	Hero(int power, string name, string clas);
 	string getName();
 	void setName(string n);
-	int getAge();
-	void setAge(int a);
+	int getPower();
+	void setPower(int a);
 	void setClas(string n);
 	string getInfo();
 };

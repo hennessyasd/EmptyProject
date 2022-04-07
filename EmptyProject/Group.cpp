@@ -52,6 +52,7 @@ string Group::getInfo() {
 	}
 
 };
+
 void Group::add(Hero hero) {
 	if (list == NULL) {
 		list = new Hero[1];
@@ -71,7 +72,3 @@ void Group::add(Hero hero) {
 		list = temp;
 	}
 };
-
-//void Group::del(Hero hero) {
-//
-//};

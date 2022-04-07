@@ -1,14 +1,14 @@
 #include "Hero.h"
 
-Hero::Hero(int age, string name, string clas) {
-	this-> age = age;
+Hero::Hero() {};
+
+Hero::Hero(int power, string name, string clas) {
+	this-> power = power;
 	this-> name = name;
 	this-> clas = clas;
 }
 
-Hero::~Hero() {
-	
-};
+Hero::~Hero() {};
 
 string Hero::getName() {
 	return name;
@@ -17,13 +17,15 @@ void Hero::setName(string name) {
 	this-> name = name;
 }
 
-int Hero::getAge() {
-	return age;
+int Hero::getPower() {
+	return power;
 }
-void Hero::setAge(int age) {
-	if (age >= 30 && age <= 1000) {
-		this-> age = age;
-	}
+void Hero::setPower(int power) {
+	do {
+		if (power >= 30 && power <= 1000) {
+			this->power = power;
+		}
+	} while (power >= 30 && power <= 1000);
 }
 
 void Hero::setClas(string name) {
@@ -31,6 +33,6 @@ void Hero::setClas(string name) {
 }
 
 string Hero::getInfo() {
-	return name + ": age = " + to_string(age)
+	return name + ": power = " + to_string(power)
 		+ ": class = " + clas;
 }

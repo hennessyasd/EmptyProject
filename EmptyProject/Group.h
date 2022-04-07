@@ -11,11 +11,11 @@ public:
 	Group(string name, Hero* list, int size);
 	~Group();
 	void add(Hero hero);
-		Hero get(int index);
-		int getSize();
-		string getName();
-		void setName(string name);
+	Hero get(int index);
+	int getSize();
+	string getName();
+	void setName(string name);
 
-		string getInfo();
+	string getInfo();
 };
 
