@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+	// Этот коммент - русский
 	Group groupHeroesIntelligence("Intelligence");
 	Group groupHeroesAgility("Agility");
 	Group groupHeroesStrength("Strength");
