@@ -1,11 +1,11 @@
-#include <iostream>
+п»ї#include <iostream>
 #include "Hero.h"
 #include "Group.h"
 
 using namespace std;
 
 int main() {
-	// Этот коммент - русский
+	// Р­С‚РѕС‚ РєРѕРјРјРµРЅС‚ - СЂСѓСЃСЃРєРёР№
 	Group groupHeroesIntelligence("Intelligence");
 	Group groupHeroesAgility("Agility");
 	Group groupHeroesStrength("Strength");
