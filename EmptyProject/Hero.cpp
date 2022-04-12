@@ -1,6 +1,14 @@
 #include "Hero.h"
 
-Hero::Hero() {};
+static int countHeroes = 0;
+
+int Hero::getCount() {
+	return countHeroes;
+}
+
+Hero::Hero() {
+	countHeroes++;
+};
 
 Hero::Hero(int power, string name, string clas) {
 	this-> power = power;
@@ -8,7 +16,9 @@ Hero::Hero(int power, string name, string clas) {
 	this-> clas = clas;
 }
 
-Hero::~Hero() {};
+Hero::~Hero() {
+	countHeroes--;
+};
 
 string Hero::getName() {
 	return name;
@@ -22,10 +32,10 @@ int Hero::getPower() {
 }
 void Hero::setPower(int power) {
 	do {
-		if (power >= 30 && power <= 1000) {
+		if (power >= MIN_HERO_POWER && power <= MAX_HERO_POWER) {
 			this->power = power;
 		}
-	} while (power >= 30 && power <= 1000);
+	} while (power >= MIN_HERO_POWER && power <= MAX_HERO_POWER);
 }
 
 void Hero::setClas(string name) {

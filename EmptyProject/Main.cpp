@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-	// Этот коммент - русский
+	// Этот коммент русский...
 	Group groupHeroesIntelligence("Intelligence");
 	Group groupHeroesAgility("Agility");
 	Group groupHeroesStrength("Strength");
@@ -21,6 +21,8 @@ int main() {
 	groupHeroesIntelligence.add(h3);
 	groupHeroesIntelligence.add(h5);
 	groupHeroesStrength.add(h1);
+
+	cout << "Number of heroes:" << h3.getCount() << endl;
 
 	system("pause");
 	return 0;
