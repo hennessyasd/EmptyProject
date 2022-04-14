@@ -3,6 +3,17 @@
 #include "Group.h"
 
 using namespace std;
+//
+//void changeClas(Hero& hr) {
+//	srand(time(NULL));
+//	int claS = rand() % 3;
+//	switch (claS) {
+//	case 1: "Berserk"; break;
+//	case 2: "Midder"; break;
+//	case 3: "Support"; break;
+//	}
+//		hr.setClas(claS);
+//}
 
 int main() {
 	// Этот коммент русский...
@@ -22,7 +33,9 @@ int main() {
 	groupHeroesIntelligence.add(h5);
 	groupHeroesStrength.add(h1);
 
-	cout << "Number of heroes:" << h3.getCount() << endl;
+	cout << h1.getInfo() << endl;
+
+	/*cout << "Number of heroes:" << h3.getCount() << endl;*/
 
 	system("pause");
 	return 0;

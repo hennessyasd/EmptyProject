@@ -8,8 +8,9 @@ private:
 	string clas;
 
 public:
-	static const int MAX_HERO_POWER 1000;
-	static const int MIN_HERO_POWER 30;
+
+	static const int MAX_HERO_POWER = 1000;
+	static const int MIN_HERO_POWER = 30;
 
 	int getCount() {};
 	Hero();
