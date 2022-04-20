@@ -24,14 +24,17 @@ Group::~Group() {
 };
 Hero Group::get(int index) {
 	if (list == NULL || index < 0 || index >= size) {
-		return Hero(0, "not selected", "undefined");
-	}else{
+		return Hero(0, "not selected", "undefined", 0, 0, 0);
+	}
+	else {
 		return list[index];
 	}
 };
 int Group::getSize() {
 	return size;
 };
+
+
 string Group::getName() {
 	return name;
 };
@@ -39,12 +42,13 @@ void Group::setName(string name) {
 	this->name = name;
 };
 
+
 string Group::getInfo() {
-	
+
 	if (list == NULL || size == 0) {
 		return "Group " + name + ":\n";
 	}
-	
+
 	string msg = "All heroes: " + name + ":\n";
 
 	for (int i = 0; i < size; i++) {

@@ -2,10 +2,13 @@
 
 class Hero {
 private:
-	static int count;
+	static int countHeroes;
 	int power;
 	string name;
 	string clas;
+	int agility;
+	int strength;
+	int intelligience;
 
 public:
 
@@ -14,11 +17,18 @@ public:
 
 	int getCount() {};
 	Hero();
-	Hero(int power, string name, string clas);
+	Hero(int power, string name, string clas, int agility, int strength, int intelligience);
 	string getName();
-	void setName(string n);
+	void setName(string name);
 	int getPower();
-	void setPower(int a);
-	void setClas(string n);
+	void setPower(int power);
+	string getClas();
+	void setClas(string clas);
+	int getAgility();
+	void setAgility(int agility);
+	int getStrength();
+	void setStrength(int strength);
+	int getIntelligience();
+	void setIntelligience(int intelligience);
 	string getInfo();
 };
