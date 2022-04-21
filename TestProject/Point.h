@@ -1,3 +1,4 @@
+#pragma once
 #include "Header.h"
 
 class Point{
@@ -18,6 +19,8 @@ public:
 	Point sum(Point point) const;
 	Point sub(Point point) const;
 	int mult(Point point) const;
+
+	Point operator +(Point point) const;
 
 	string getInfo();
 

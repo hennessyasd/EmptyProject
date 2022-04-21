@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "Point.h"
 
 using namespace std;
 
@@ -48,13 +49,27 @@ void test(DArray& arr){
 
 int main() {
 
-	DArray darr;
+	/*DArray darr;
 
 	darr.init();
 
 	test(darr);
 
-	cout << darr.getInfo() << endl;
+	cout << darr.getInfo() << endl;*/
+
+	Point point1(3, 6);
+	Point point2(5, 7);
+
+	Point point3 = point1.sum(point2);
+
+	point3 = point1 + point2;
+	/*point3 = point1 - point2;
+	point3 = point1 * point2;*/
+
+	cout << point1.getInfo() << endl;
+	cout << point2.getInfo() << endl;
+	cout << point3.getInfo() << endl;
+
 
 	system("pause");
 	return 0;

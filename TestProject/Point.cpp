@@ -21,6 +21,13 @@ Point Point::sum(Point point) const {
 	int tempY = y + point.y;
 	return Point(tempX, tempY);
 }
+
+Point Point::operator +(Point point) const {
+	int tempX = x + point.x;
+	int tempY = y + point.y;
+	return Point(tempX, tempY);
+}
+
 Point Point::sub(Point point) const {
 	return Point(x - point.x, y - point.y);
 }
