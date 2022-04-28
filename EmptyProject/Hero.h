@@ -3,10 +3,13 @@
 class Hero {
 private:
 	static int countHeroes;
+
+protected:
+
 	int power;
 	string name;
 	string clas;
-	int agility;
+	int agility;	// for heroes only
 	int strength;
 	int intelligience;
 
@@ -18,6 +21,7 @@ public:
 	int getCount() {};
 	Hero();
 	Hero(int power, string name, string clas, int agility, int strength, int intelligience);
+	~Hero();
 	string getName();
 	void setName(string name);
 	int getPower();
