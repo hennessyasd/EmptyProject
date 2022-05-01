@@ -20,7 +20,7 @@ public:
 
 	int getCount() {};
 	Hero();
-	Hero(int power, string name, string clas, int agility, int strength, int intelligience);
+	Hero(string name, int power,string clas, int agility, int strength, int intelligience);
 	~Hero();
 	string getName();
 	void setName(string name);

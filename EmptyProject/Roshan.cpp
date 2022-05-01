@@ -1,22 +1,19 @@
 #include "Roshan.h"
 
-Roshan::Roshan() {
-	name = "Roshan";
-	power = "158";
-	clas = "Creep";
+Roshan::Roshan() : Hero() {
 	ability = "Bash";
-}
 
-//Roshan::Roshan(string name, int power, string clas, string ability) {
-//	this->name = name;
-//	this->power = power;
-//	this->clas = clas;
-//	this->ability = ability;
-//}
+};
 
-Roshan::~Roshan();
+Roshan::Roshan(string name, int power, string clas, int agility, int strength, int intelligience,
+	string ability) : Hero(name, power, clas, agility, strength, intelligience) {
 
-int Roshan::getAbility() {
+	this->ability = ability;
+};
+
+Roshan::~Roshan(){};
+
+string Roshan::getAbility() {
 	return ability;
 };
 
@@ -24,7 +21,7 @@ void Roshan::setAbility(string ability) {
 	this->ability = ability;
 };
 
-string getInfo() {
+string Roshan::getInfo() {
 	return Hero::getInfo(); +
 		"; Ability = " + ability;
 };

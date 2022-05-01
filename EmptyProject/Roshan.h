@@ -7,10 +7,11 @@ class Roshan : public Hero {
 		string ability;
 	public:
 		Roshan();
-		//Roshan::Roshan(string name, int power, string clas, string ability);
+		Roshan(string name, int power, string clas, int agility, int strength, int intelligience,
+		string ability);
 		~Roshan();
 
-		int getAbility();
+		string getAbility();
 		void setAbility(string ability);
 
 		string getInfo();

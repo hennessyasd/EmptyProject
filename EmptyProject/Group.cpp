@@ -24,7 +24,7 @@ Group::~Group() {
 };
 Hero Group::get(int index) {
 	if (list == NULL || index < 0 || index >= size) {
-		return Hero(0, "not selected", "undefined", 0, 0, 0);
+		return Hero("not selected", 0, "undefined", 0, 0, 0);
 	}
 	else {
 		return list[index];

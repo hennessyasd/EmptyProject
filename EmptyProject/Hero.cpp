@@ -16,10 +16,10 @@ Hero::Hero() {
 	intelligience = 0;
 };
 
-Hero::Hero(int power, string name, string clas, int agility, int strength,int intelligience) {
+Hero::Hero(string name, int power,string clas, int agility, int strength, int intelligience) {
 	countHeroes++;
-	this->power = power;
 	this->name = name;
+	this->power = power;
 	this->clas = clas;
 	this->agility = agility;
 	this->strength = strength;
