@@ -1,6 +1,15 @@
 #include "Header.h"
 
-class Hero {
+class Entity {
+public:
+	
+	Entity() {};
+	~Entity() {};
+};
+
+class Hero : public Entity{
+	/*friend void changeClas(Hero& hero);*/
+
 private:
 	static int countHeroes;
 
@@ -18,7 +27,7 @@ public:
 	static const int MAX_HERO_POWER = 1000;
 	static const int MIN_HERO_POWER = 30;
 
-	int getCount() {};
+	int getCount();
 	Hero();
 	Hero(string name, int power,string clas, int agility, int strength, int intelligience);
 	~Hero();
