@@ -92,5 +92,9 @@ void Hero::setIntelligience(int intelligience) {
 
 string Hero::getInfo() {
 	return name + ": power = " + to_string(power)
-		+ ": class = " + clas;
+		+ ": class = " + clas
+		+ ": name = " + name
+		+ ": his agility = " + to_string(agility)
+		+ ": his strength = " + to_string(strength)
+		+ ": his intelligience = " + to_string(intelligience);
 }

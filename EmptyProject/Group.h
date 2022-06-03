@@ -1,4 +1,5 @@
 #include "Hero.h"
+#include "Header.h"
 
 class Group {
 	friend class Manager;
@@ -12,6 +13,7 @@ public:
 	Group(string name);
 	Group(string name, Hero* list, int size);
 	~Group();
+
 	void add(Hero hero);
 	Hero get(int index);
 	int getSize();

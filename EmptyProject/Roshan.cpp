@@ -22,6 +22,5 @@ void Roshan::setAbility(string ability) {
 };
 
 string Roshan::getInfo() {
-	return Hero::getInfo(); +
-		"; Ability = " + ability;
+	return Hero::getInfo() + "; Ability = " + ability;
 };

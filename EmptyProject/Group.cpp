@@ -1,5 +1,4 @@
 #include "Group.h"
-#include "Header.h"
 
 Group::Group() {
 	name = "No group name";
@@ -21,12 +20,12 @@ Group::~Group() {
 	if (list != NULL) {
 		delete[] list;
 	}
+
 };
 Hero Group::get(int index) {
 	if (list == NULL || index < 0 || index >= size) {
 		return Hero("not selected", 0, "undefined", 0, 0, 0);
-	}
-	else {
+	}else {
 		return list[index];
 	}
 };
