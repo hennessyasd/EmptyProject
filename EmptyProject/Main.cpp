@@ -11,10 +11,6 @@ void changeClas(Hero& hero) {
 }
 
 int main() {
-	/*Roshan rosh;*/
-
-	/* Этот коммент русский...*/
-
 	Group groupHeroesIntelligence("Intelligence");		// heroes of intel group
 	Group groupHeroesAgility("Agility");		// heroes of agil group
 	Group groupHeroesStrength("Strength");		// heroes of stren group
@@ -31,10 +27,11 @@ int main() {
 	groupHeroesIntelligence.add(h5);
 	groupHeroesStrength.add(h1);
 
-	cout << groupHeroesAgility.getInfo() << endl;
-	cout << groupHeroesStrength.getInfo() << endl;
-	cout << groupHeroesIntelligence.getInfo() << endl;
-
+	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+	cout << "|" << groupHeroesAgility.getInfo() << "|" << endl;
+	cout << "|" << groupHeroesStrength.getInfo() << "|" << endl;
+	cout << "|" << groupHeroesIntelligence.getInfo() << "|" << endl;
+	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 	/*cout << "The ROSHAN has got ability: " << rosh.getAbility() << endl;*/
 	
 	system("pause");

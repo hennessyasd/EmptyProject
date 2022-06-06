@@ -35,7 +35,7 @@ int Point::mult(Point point) const {
 	return x * point.x + y * point.y;
 }
 
-string Point::getInfo() {
+string Point::gEtInfo() {
 	return "Point: x = " + to_string(x) 
 		+ ", y = " +  to_string(y);
 }

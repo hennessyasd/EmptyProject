@@ -44,28 +44,27 @@ void Group::setName(string name) {
 
 string Group::getInfo() {
 
-	if (list == NULL || size == 0) {
+	if (list == NULL || size == 0){
 		return "Group " + name + ":\n";
 	}
 
 	string msg = "All heroes: " + name + ":\n";
 
-	for (int i = 0; i < size; i++) {
+	for (int i = 0; i < size; i++){
 		msg += list[i].getInfo() + "\n";
 	}
 	return msg;
 };
 
-void Group::add(Hero hero) {
-	if (list == NULL) {
+void Group::add(Hero hero){
+	if (list == NULL){
 		list = new Hero[1];
 		list[0] = hero;
 		size = 1;
-	}
-	else {
+	}else {
 		Hero* temp = new Hero[size + 1];
 
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++){
 			temp[i] = list[i];
 		}
 		temp[size] = hero;

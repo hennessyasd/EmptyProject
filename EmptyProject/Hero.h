@@ -1,12 +1,5 @@
 #include "Header.h"
 
-//class Entity {
-//public:
-//	
-//	Entity() {}
-//	~Entity() {}
-//};
-
 class Hero {
 	friend void changeClas(Hero& hero);
 
