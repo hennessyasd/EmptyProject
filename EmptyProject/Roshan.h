@@ -7,7 +7,7 @@ class Roshan : public Hero {
 		string ability;
 	public:
 		Roshan();
-		Roshan(string name, int power, string clas, int agility, int strength, int intelligience,
+		Roshan(string name, int attack, string clas, int agility, int strength, int intelligience,
 		string ability);
 		~Roshan();
 

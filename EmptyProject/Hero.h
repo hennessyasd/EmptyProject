@@ -8,7 +8,7 @@ private:
 
 protected:
 
-	int power;
+	int attack;
 	string name;
 	string clas;
 	int agility;	// this is characteristics only for heroes 
@@ -21,13 +21,13 @@ public:
 	static const int MIN_HERO_POWER = 30;
 
 	Hero();
-	Hero(string name, int power,string clas, int agility, int strength, int intelligience);
+	Hero(string name, int attack,string clas, int agility, int strength, int intelligience);
 	~Hero();
 
 	string getName();
 	void setName(string name);
-	int getPower();
-	void setPower(int power);
+	int getAttack();
+	void setAttack(int power);
 	string getClas();
 	void setClas(string clas);
 	int getAgility();

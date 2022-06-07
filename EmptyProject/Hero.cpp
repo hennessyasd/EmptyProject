@@ -9,17 +9,17 @@ int Hero::getCount() {
 Hero::Hero() {
 	countHeroes++;
 	name = "noname";
-	power = 0;
+	attack = 0;
 	clas = "undefind";
 	agility = 0;
 	strength = 0;
 	intelligience = 0;
 };
 
-Hero::Hero(string name, int power,string clas, int agility, int strength, int intelligience) {
+Hero::Hero(string name, int attack,string clas, int agility, int strength, int intelligience) {
 	countHeroes++;
 	this->name = name;
-	this->power = power;
+	this->attack = attack;
 	this->clas = clas;
 	this->agility = agility;
 	this->strength = strength;
@@ -41,15 +41,15 @@ void Hero::setName(string name) {
 
 
 
-int Hero::getPower() {
-	return power;
+int Hero::getAttack() {
+	return attack;
 }
-void Hero::setPower(int power) {
+void Hero::setAttack(int attack) {
 	do {
-		if (power >= MIN_HERO_POWER && power <= MAX_HERO_POWER) {
-			this->power = power;
+		if (attack >= MIN_HERO_POWER && attack <= MAX_HERO_POWER) {
+			this->attack = attack;
 		}
-	} while (power >= MIN_HERO_POWER && power <= MAX_HERO_POWER);
+	} while (attack >= MIN_HERO_POWER && attack <= MAX_HERO_POWER);
 }
 
 
@@ -91,10 +91,10 @@ void Hero::setIntelligience(int intelligience) {
 
 
 string Hero::getInfo() {
-	return name + ": power = " + to_string(power)
+	return name + ": Hero's attack = " + to_string(attack)
 		+ ": class = " + clas
-		+ ": name = " + name
 		+ ": his agility = " + to_string(agility)
 		+ ": his strength = " + to_string(strength)
-		+ ": his intelligience = " + to_string(intelligience);
+		+ ": his intelligience = " + to_string(intelligience)
+		+ "\n";
 }

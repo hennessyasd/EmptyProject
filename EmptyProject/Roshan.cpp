@@ -5,8 +5,8 @@ Roshan::Roshan() : Hero() {
 
 };
 
-Roshan::Roshan(string name, int power, string clas, int agility, int strength, int intelligience,
-	string ability) : Hero(name, power, clas, agility, strength, intelligience) {
+Roshan::Roshan(string name, int attack, string clas, int agility, int strength, int intelligience,
+	string ability) : Hero(name, attack, clas, agility, strength, intelligience) {
 
 	this->ability = ability;
 };
