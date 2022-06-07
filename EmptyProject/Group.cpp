@@ -61,7 +61,7 @@ void Group::add(Hero hero){
 		list = new Hero[1];
 		list[0] = hero;
 		size = 1;
-	}else {
+	}else{
 		Hero* temp = new Hero[size + 1];
 
 		for (int i = 0; i < size; i++){

@@ -8,7 +8,7 @@ private:
 
 protected:
 
-	int attack;
+	int attack; 
 	string name;
 	string clas;
 	int agility;	// this is characteristics only for heroes 

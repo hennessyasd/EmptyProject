@@ -2,8 +2,8 @@
 
 void changeClas(Hero& hero) {
 	srand(time(NULL));
-	string words[3] = { "Midder", "Support", "Berserk" };
-	string clas = words[rand() % 3];
+	string words[5] = { "midder", "support", "carry", "forest", "harder" };
+	string clas = words[rand() % 5];
 
 	hero.setClas(clas);
 }
@@ -42,7 +42,7 @@ int main() {
 	Hero h26("Omniknight", 64, "support", 23, 15, 16);
 	Hero h27("Phoenix", 59, "support, harder", 23, 12, 16);
 	Hero h28("Primal Beast", 64, "harder, support", 26, 15, 16);
-	Hero h29("Pudge", 73, "midder, support, harder", 25, 14, 16);
+	Hero h29("Pudge", 73, "All roles", 25, 14, 16);
 	Hero h30("Sand King", 55, "harder", 22, 19, 19);
 	Hero h31("Slardar", 59, "harder", 21, 17, 15);
 	Hero h32("Snapfire", 52, "support, midder", 20, 16, 21);
@@ -278,6 +278,10 @@ int main() {
 	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 	cout << "|" << groupHeroesIntelligence.getInfo() << endl;
+
+	cout << h1.getClas() << endl;
+	changeClas(h1);
+	cout << h1.getClas() << endl;
 
 	system("pause");
 
