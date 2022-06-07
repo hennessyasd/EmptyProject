@@ -1,10 +1,8 @@
-﻿#include "Header.h"
-#include "Group.h"
-#include "Roshan.h"
+﻿#include "Group.h"
 
 void changeClas(Hero& hero) {
 	srand(time(NULL));
-	string words[3] = { (char*)"Midder", (char*)"Support", (char*)"Berserk" };
+	string words[3] = { "Midder", "Support", "Berserk" };
 	string clas = words[rand() % 3];
 
 	hero.setClas(clas);
